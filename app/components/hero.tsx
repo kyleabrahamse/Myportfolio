@@ -1,9 +1,9 @@
 import Image from "next/image";
-import "../globals.css"
+import "../globals.css";
 
 export default function Hero() {
   return (
-    <div className="hero bg-transparent justify-center flex flex-col text-white ">
+    <div className="hero bg-transparent justify-center flex flex-col text-white " id="home">
       <div className="w-8/12 mx-auto pt-52">
         <div className="flex items-center gap-3 pb-6">
           <Image
@@ -15,15 +15,17 @@ export default function Hero() {
           />
           <h2 className="highlight text-2xl font-bold">HI, I&apos;M KYLE</h2>
         </div>
-        <h1 className="text-6xl pb-6 font-semibold">
-          I&apos;m a front-end developer with expertise in{" "}
-          <span className="highlight">React</span> and{" "}
-          <span className="highlight">Typscript.</span>
-        </h1>
-        <p className="text-2xl pb-16 font-semibold">
-          I specialise in leveraging Next.JS to optomise runtime performance and
-          enhance user experiences.
-        </p>
+        <div className="w-7/12">
+          <h1 className="text-6xl pb-6 font-bold">
+            I&apos;m a front-end developer with expertise in{" "}
+            <span className="highlight">React</span> and{" "}
+            <span className="highlight">Typscript.</span>
+          </h1>
+          <p className="text-2xl pb-16 font-semibold pr-20">
+            I specialise in leveraging Next.JS to optomise runtime performance
+            and enhance user experiences.
+          </p>
+        </div>
         <ul className="flex gap-8 font-bold pb-40">
           <li>
             <Image

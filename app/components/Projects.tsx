@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="projects">
       <h1 className="pt-20 pb-20 text-7xl font-bold w-2/3 mx-auto">My Work</h1>
       <div className="flex hover-project">
         <div className="w-1/2">
@@ -48,7 +48,7 @@ export default function Projects() {
           <h2 className="text-4xl pt-4 font-bold pb-4 tracking-wide">
             A Holiday Keeper
           </h2>
-          <p className="text-2xl font-semi-bold">
+          <p className="text-2xl font-semi-bold pr-12">
             An app to keep track of holiday destinations a user wants to visit.
           </p>
         </div>

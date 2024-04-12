@@ -31,7 +31,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="contact text-white">
+    <div className="contact text-white" id="contact">
       <div className="flex w-8/12 mx-auto py-20">
         <div className="w-1/2">
           <p className="highlight font-bold text-xl pb-5">CONTACT ME</p>
@@ -45,8 +45,8 @@ export default function Contact() {
             <span className="highlight">Email</span> kyleabrahamse@outlook.com
           </p>
           <div className="flex pb-24">
-            <p className="mr-4 highlight text-xl font-bold">Follow my work</p>
-            <div className="flex gap-3 ">
+            <p className="mr-4 highlight text-xl font-bold my-auto">Follow my work</p>
+            <div className="flex gap-3 my-auto">
               <div className="icons">
                 <FontAwesomeIcon icon={faLinkedin} />
               </div>

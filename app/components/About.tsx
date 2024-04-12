@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="about">
       <div className="w-8/12 mx-auto pt-40">
         <h2 className="highlight text-xl font-extrabold pb-3">MY FOCUS</h2>
         <div className="flex gap-10">
@@ -43,8 +43,22 @@ export default function About() {
               highest standards of quality.
             </p>
             <p>
-              To see examples of my work please visit my <Link href="https://github.com/kyleabrahamse" target="_blank" className="highlight underline">Github</Link> profile or
-              follow my work log on my <Link href="https://www.linkedin.com/in/kyle-abrahamse/" target="_blank" className="highlight underline">LinkedIn.</Link>
+              To see examples of my work please visit my{" "}
+              <Link
+                href="https://github.com/kyleabrahamse"
+                target="_blank"
+                className="highlight underline"
+              >
+                Github
+              </Link>{" "}
+              profile or follow my work log on my{" "}
+              <Link
+                href="https://www.linkedin.com/in/kyle-abrahamse/"
+                target="_blank"
+                className="highlight underline"
+              >
+                LinkedIn.
+              </Link>
             </p>
           </div>
         </div>

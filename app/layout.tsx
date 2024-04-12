@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 
-import Header from "./Header/page";
+import Header from "./components/Header";
 
 const figtree = Figtree({
-  weight: ['400', "500", "600", "700", "800"],
-  subsets: ['latin'],
-})
-
+  weight: ["400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
