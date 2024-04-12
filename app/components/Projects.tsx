@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <div className="bg-white">
       <h1 className="pt-20 pb-20 text-7xl font-bold w-2/3 mx-auto">My Work</h1>
-      <div className="flex">
+      <div className="flex hover-project">
         <div className="w-1/2">
           <Image
             src="/images/leopard.png"
@@ -19,7 +19,7 @@ export default function Projects() {
             <h3 className="bg-gray-200 text-lg rounded-full px-3">REACT</h3>
             <h3 className="bg-gray-200 text-lg rounded-full px-3">SCSS</h3>
           </div>
-          <h2 className="text-4xl pt-4 font-bold pb-4 tracking-wide">
+          <h2 className="h1 text-4xl pt-4 font-bold pb-4 tracking-wide">
             Pilanesberg Leopard Project
           </h2>
           <p className="text-2xl font-semi-bold">
@@ -46,7 +46,7 @@ export default function Projects() {
             <h3 className="bg-gray-200 text-lg rounded-full px-3">FIREBASE</h3>
           </div>
           <h2 className="text-4xl pt-4 font-bold pb-4 tracking-wide">
-            A holiday Keeper
+            A Holiday Keeper
           </h2>
           <p className="text-2xl font-semi-bold">
             An app to keep track of holiday destinations a user wants to visit.

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --highlight: #439288
+  --highlight: #439288;
 }
 
 .icons {
@@ -15,11 +15,11 @@
 }
 
 .hover:hover {
-  color: var(--highlight)
+  color: var(--highlight);
 }
 
 .highlight {
-  color: var(--highlight)
+  color: var(--highlight);
 }
 
 .video-container {
@@ -42,10 +42,24 @@
 }
 
 .button {
-  border: 1px solid var(--highlight)
+  border: 1px solid var(--highlight);
 }
 
 .button:hover {
   background-color: var(--highlight);
-  color: white
+  color: white;
+}
+
+.contact {
+  background-color: #0a233c;
+}
+
+.inputs {
+  background-color: #3c5064;
+  border: 2px solid #9ea8b2;
+  padding-left: 20px;
+}
+
+.inputs::placeholder {
+  color: #9ea8b2;
 }
