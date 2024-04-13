@@ -32,7 +32,7 @@ export default function Projects() {
       description:
         "An app to keep track of holiday destinations a user wants to visit.",
       technologies: ["JAVASCRIPT", "FIREBASE"],
-      link: "#",
+      link: "https://our-holiday-planner.netlify.app/",
     },
     {
       src: "/images/recipe.png",
@@ -41,7 +41,7 @@ export default function Projects() {
       description:
         "A recipe planner that generates recipes and a shopping list for the week.",
       technologies: ["JAVASCRIPT", "HTML", "CSS"],
-      link: "#",
+      link: "https://our-recipe-planner.netlify.app/",
     },
   ];
 
@@ -64,7 +64,7 @@ export default function Projects() {
                   onMouseEnter={() => handleHover(index)}
                   onMouseLeave={handleMouseLeave}
                   className={`imageHover absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-lg px-5 py-2 rounded-full z-10 ${
-                    hoveredIndex === index ? "visible" : "invisible"
+                    hoveredIndex === index ? "visible" : "hidden"
                   }`}
                 >
                   LAUNCH WEBSITE
@@ -74,7 +74,7 @@ export default function Projects() {
                   alt={project.alt}
                   width={2000}
                   height={2000}
-                  className={`w-full h-96 object-cover rounded-lg ${
+                  className={`w-full h-96 rounded-lg ${
                     index === 1 ? "" : "object-cover"
                   } ${hoveredIndex === index ? "opacity-50" : "opacity-1"}`}
                   onMouseEnter={() => handleHover(index)}
