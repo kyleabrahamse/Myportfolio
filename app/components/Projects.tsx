@@ -1,81 +1,120 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Projects() {
+  const [hoveredIndex, setHoveredIndex] = useState(-1);
+
+  const handleHover = (index: number) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(-1);
+  };
+
+  const projects = [
+    {
+      src: "/images/leopard.png",
+      alt: "Pilanesberg Leopard Project",
+      title: "Pilanesberg Leopard Project",
+      description:
+        "A webiste to help track and identify leopards fostering consevation efforts within the Pilanesberg Game Reserve in South Africa.",
+      technologies: ["REACT", "SCSS"],
+      link: "https://pilanesberg-leopard-project.netlify.app/",
+    },
+    {
+      src: "/images/holiday.png",
+      alt: "A Holiday Keeper",
+      title: "A Holiday Keeper",
+      description:
+        "An app to keep track of holiday destinations a user wants to visit.",
+      technologies: ["JAVASCRIPT", "FIREBASE"],
+      link: "#",
+    },
+    {
+      src: "/images/recipe.png",
+      alt: "Recipe Planner",
+      title: "Recipe Planner",
+      description:
+        "A recipe planner that generates recipes and a shopping list for the week.",
+      technologies: ["JAVASCRIPT", "HTML", "CSS"],
+      link: "#",
+    },
+  ];
+
   return (
-    <div className="bg-white" id="projects">
+    <div className="bg-white pb-20" id="projects">
       <h1 className="pt-20 pb-20 text-7xl font-bold w-2/3 mx-auto">My Work</h1>
-      <div className="flex hover-project">
-        <div className="w-1/2">
-          <Image
-            src="/images/leopard.png"
-            alt=""
-            width={2000}
-            height={2000}
-            className="w-full h-96 object-cover rounded-lg"
-          />
-        </div>
-        <div className="w-4/12 my-auto ml-10">
-          <div className="flex gap-3">
-            <h3 className="bg-gray-200 text-lg rounded-full px-3">REACT</h3>
-            <h3 className="bg-gray-200 text-lg rounded-full px-3">SCSS</h3>
+      {projects.map((project, index) => (
+        // Projects container
+        <div
+          key={index}
+          className={`flex hover-project pb-10 ${
+            index === 1 ? "flex-row-reverse" : ""
+          }`}
+        >
+          {/* Image div with button */}
+          <div className="bg-black w-1/2 rounded-lg relative">
+            <div>
+              <Link href={project.link} target="_blank">
+                <button
+                  onMouseEnter={() => handleHover(index)}
+                  onMouseLeave={handleMouseLeave}
+                  className={`imageHover absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-lg px-5 py-2 rounded-full z-10 ${
+                    hoveredIndex === index ? "visible" : "invisible"
+                  }`}
+                >
+                  LAUNCH WEBSITE
+                </button>
+                <Image
+                  src={project.src}
+                  alt={project.alt}
+                  width={2000}
+                  height={2000}
+                  className={`w-full h-96 object-cover rounded-lg ${
+                    index === 1 ? "" : "object-cover"
+                  } ${hoveredIndex === index ? "opacity-50" : "opacity-1"}`}
+                  onMouseEnter={() => handleHover(index)}
+                  onMouseLeave={handleMouseLeave}
+                />
+              </Link>
+            </div>
           </div>
-          <h2 className="h1 text-4xl pt-4 font-bold pb-4 tracking-wide">
-            Pilanesberg Leopard Project
-          </h2>
-          <p className="text-2xl font-semi-bold">
-            A webiste to help track and identify leopards fostering consevation
-            efforts within the Pilanesberg Game Reserve in South Africa.
-          </p>
-        </div>
-      </div>
-      <div className="flex flex-row-reverse py-10">
-        <div className="w-1/2">
-          <Image
-            src="/images/holiday.png"
-            alt=""
-            width={2000}
-            height={2000}
-            className="w-full h-96 rounded-lg"
-          />
-        </div>
-        <div className="w-4/12 my-auto ml-10">
-          <div className="flex gap-3">
-            <h3 className="bg-gray-200 text-lg rounded-full px-3">
-              JAVASCRIPT
-            </h3>
-            <h3 className="bg-gray-200 text-lg rounded-full px-3">FIREBASE</h3>
+          {/* Project Info */}
+          <div className={`w-4/12 my-auto ml-10`}>
+            <div className="flex gap-3">
+              {/* List tech */}
+              {project.technologies.map((tech, index) => (
+                <h3
+                  key={index}
+                  className="bg-gray-200 text-lg rounded-full px-3"
+                >
+                  {tech}
+                </h3>
+              ))}
+            </div>
+            {/* Heading */}
+            <Link href={project.link} target="_blank">
+              <h2
+                onMouseEnter={() => handleHover(index)}
+                onMouseLeave={handleMouseLeave}
+                className={`h1 text-4xl pt-4 font-bold pb-4 tracking-wide ${
+                  hoveredIndex === index
+                    ? "highlight underline underline-offset-4"
+                    : ""
+                }`}
+              >
+                {project.title}
+              </h2>
+            </Link>
+            {/* Description */}
+            <p className="text-2xl font-semi-bold">{project.description}</p>
           </div>
-          <h2 className="text-4xl pt-4 font-bold pb-4 tracking-wide">
-            A Holiday Keeper
-          </h2>
-          <p className="text-2xl font-semi-bold pr-12">
-            An app to keep track of holiday destinations a user wants to visit.
-          </p>
         </div>
-      </div>
-      <div className="flex pb-20">
-        <div className="w-1/2">
-          <Image
-            src="/images/recipe.png"
-            alt=""
-            width={2000}
-            height={2000}
-            className="w-full h-96 object-cover rounded-lg"
-          />
-        </div>
-        <div className="w-4/12 my-auto ml-10">
-          <div className="flex gap-3">
-            <h3 className="bg-gray-200 text-lg rounded-full px-3">JAVSCRIPT</h3>
-            <h3 className="bg-gray-200 text-lg rounded-full px-3">HTML</h3>
-            <h3 className="bg-gray-200 text-lg rounded-full px-3">CSS</h3>
-          </div>
-          <h2 className="text-4xl pt-4 font-bold pb-4 tracking-wide">Recipe Planner</h2>
-          <p className="text-2xl font-semi-bold">
-            A recipe planner that generates recipes and a shopping list for the
-            week.
-          </p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

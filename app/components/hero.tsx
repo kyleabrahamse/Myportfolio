@@ -15,7 +15,7 @@ export default function Hero() {
           />
           <h2 className="highlight text-2xl font-bold">HI, I&apos;M KYLE</h2>
         </div>
-        <div className="w-7/12">
+        <div className="w-10/12">
           <h1 className="text-6xl pb-6 font-bold">
             I&apos;m a front-end developer with expertise in{" "}
             <span className="highlight">React</span> and{" "}

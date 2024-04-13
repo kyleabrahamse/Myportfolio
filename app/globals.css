@@ -63,3 +63,8 @@
 .inputs::placeholder {
   color: #9ea8b2;
 }
+
+.imageHover {
+  background-color: var(--highlight);
+  color: white
+}
