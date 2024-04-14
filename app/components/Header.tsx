@@ -8,6 +8,7 @@ import "../globals.css";
 export default function Header() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [headerBlack, setHeaderBlack] = useState(false);
 
   const handleClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -21,20 +22,29 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      setVisible(
-        (prevScrollPos > currentScrollPos &&
-          prevScrollPos - currentScrollPos > 70) ||
-          currentScrollPos < 10
-      );
+
+      if (currentScrollPos > 800) {
+        setHeaderBlack(true);
+        setVisible(true);
+      } else {
+        setHeaderBlack(false);
+        setVisible(currentScrollPos < prevScrollPos); // Set visible based on scroll direction
+      }
+
       setPrevScrollPos(currentScrollPos);
     };
+
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos, visible]);
+  }, [prevScrollPos]);
+
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full bg-transparent z-10 text-white pt-6 transition-all duration-200 ${
+      className={`fixed top-0 left-0 w-full ${
+        headerBlack ? "bg-black" : "bg-transparent"
+      } z-20 text-white pt-6 transition-all duration-200 ${
         visible ? "" : "-translate-y-full"
       }`}
     >
