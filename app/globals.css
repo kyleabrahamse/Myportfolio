@@ -6,6 +6,10 @@
   --highlight: #439288;
 }
 
+.header {
+  color: #0a233c;
+}
+
 .icons {
   font-size: 35px;
 }
@@ -66,5 +70,5 @@
 
 .imageHover {
   background-color: var(--highlight);
-  color: white
+  color: white;
 }

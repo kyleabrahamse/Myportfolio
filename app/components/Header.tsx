@@ -43,18 +43,18 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full ${
-        headerBlack ? "bg-black" : "bg-transparent"
+        headerBlack ? "header bg-white" : "bg-transparent"
       } z-20 text-white pt-6 transition-all duration-200 ${
         visible ? "" : "-translate-y-full"
       }`}
     >
-      <div className="flex content-center w-8/12 mx-auto justify-between items-center sticky">
+      <div className="flex content-center w-8/12 mx-auto justify-between ">
         <div className="">
           <a href="#home" onClick={(e) => handleClick(e, "home")}>
             <h1 className="text-4xl leading-none tracking-tight font-semibold">
               KyleCodes
             </h1>
-            <p className="text-sm text-center tracking-normal font-bold">
+            <p className={`text-sm text-center tracking-normal font-bold ${headerBlack ? "opacity-0" : ""} `}>
               FRONT-END DEVELOPER
             </p>
           </a>

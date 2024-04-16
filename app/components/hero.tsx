@@ -3,7 +3,7 @@ import "../globals.css";
 
 export default function Hero() {
   return (
-    <div className="hero bg-transparent justify-center flex flex-col text-white" id="home">
+    <div className="hero bg-transparent justify-center flex flex-col text-white " id="home">
       <div className="w-8/12 mx-auto pt-52">
         <div className="flex items-center gap-3 pb-6">
           <Image
