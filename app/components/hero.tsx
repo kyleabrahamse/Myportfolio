@@ -29,7 +29,7 @@ export default function Hero() {
             and enhance user experiences.
           </p>
         </div>
-        <ul className="flex gap-8 font-bold pb-40">
+        <ul className="grid grid-cols-2 lg:flex gap-8 font-bold pb-40">
           <li>
             <Image
               src="/images/Javascript.png"
@@ -54,7 +54,7 @@ export default function Hero() {
               alt="tech"
               width={500}
               height={500}
-              className="h-auto w-36"
+              className="h-auto w-28 md:w-36"
             />
           </li>
           <li>
@@ -63,7 +63,7 @@ export default function Hero() {
               alt="tech"
               width={500}
               height={500}
-              className="h-auto w-40"
+              className="h-auto w-28 md:w-40"
             />
           </li>
         </ul>

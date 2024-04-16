@@ -58,7 +58,7 @@ export default function Contact() {
 
   return (
     <div className="contact text-white" id="contact">
-      <div className="flex flex-col lg:flex-row w-8/12 mx-auto py-20">
+      <div className="flex flex-col lg:flex-row w-10/12 lg:w-8/12 mx-auto py-20">
         <div className="lg:w-1/2">
           <p className="highlight font-bold text-xl pb-5">CONTACT ME</p>
           <h1 className="text-6xl font-bold pb-10"> Feel free to drop me a message </h1>
