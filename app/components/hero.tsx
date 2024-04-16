@@ -3,8 +3,11 @@ import "../globals.css";
 
 export default function Hero() {
   return (
-    <div className="hero bg-transparent justify-center flex flex-col text-white " id="home">
-      <div className="w-8/12 mx-auto pt-52">
+    <div
+      className="hero bg-transparent justify-center flex flex-col text-white "
+      id="home"
+    >
+      <div className="w-10/12 md:w-8/12 mx-auto pt-52">
         <div className="flex items-center gap-3 pb-6">
           <Image
             src="/images/ppimage2.jpeg"
@@ -15,13 +18,13 @@ export default function Hero() {
           />
           <h2 className="highlight text-2xl font-bold">HI, I&apos;M KYLE</h2>
         </div>
-        <div className="w-10/12">
-          <h1 className="text-6xl pb-6 font-bold">
+        <div className="md:w-10/12">
+          <h1 className="text-4xl lg:text-6xl pb-6 font-bold">
             I&apos;m a front-end developer with expertise in{" "}
             <span className="highlight">React</span> and{" "}
             <span className="highlight">Typscript.</span>
           </h1>
-          <p className="text-2xl pb-16 font-semibold pr-20">
+          <p className="text-2xl pb-16 font-semibold md:pr-20">
             I specialise in leveraging Next.JS to optomise runtime performance
             and enhance user experiences.
           </p>

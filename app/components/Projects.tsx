@@ -52,12 +52,12 @@ export default function Projects() {
         // Projects container
         <div
           key={index}
-          className={`flex hover-project pb-10 ${
-            index % 2 !== 0 ? "flex-row-reverse" : ""
+          className={`flex flex-col lg:flex-row hover-project pb-10 ${
+            index % 2 !== 0 ? "lg:flex-row-reverse" : ""
           }`}
         >
           {/* Image div with button */}
-          <div className="bg-black w-1/2 rounded-lg relative">
+          <div className="bg-black lg:w-1/2 rounded-lg relative">
             <div>
               <Link href={project.link} target="_blank">
                 <button
@@ -85,9 +85,9 @@ export default function Projects() {
           </div>
           {/* Project Info */}
           <div
-            className={`w-4/12 my-auto ml-10 ${index % 2 !== 0 ? "mr-5" : ""}`}
+            className={`lg:w-4/12 w-10/12 my-auto ml-10 ${index % 2 !== 0 ? "mr-5" : ""}`}
           >
-            <div className="flex gap-3">
+            <div className="flex gap-3 pt-10 lg:pb-0">
               {/* List tech */}
               {project.technologies.map((tech, index) => (
                 <h3

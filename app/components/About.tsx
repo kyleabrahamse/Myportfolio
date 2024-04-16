@@ -1,24 +1,30 @@
+"use client"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+
+import { handleClick } from "./Header";
 
 import Link from "next/link";
 
 export default function About() {
   return (
     <div className="bg-white" id="about">
-      <div className="w-8/12 mx-auto pt-40">
+      <div className="lg:w-8/12 w-10/12 mx-auto pt-40">
         <h2 className="highlight text-xl font-extrabold pb-3">MY FOCUS</h2>
-        <div className="flex gap-10">
-          <div className="w-1/2 ">
+        <div className="flex flex-col lg:flex-row gap-10">
+          <div className="lg:w-1/2 ">
             <h1 className="text-5xl font-semi-bold pb-8">
               Harnessing the capabilities of{" "}
               <span className="highlight">Next.js</span> to improve runtime
               efficiency and elevate user interaction.
             </h1>
             <div className="flex gap-6 items-center">
-              <button className="button p-3 px-7 rounded-full text-2xl font-extrabold">
+              <button className="button p-3 lg:px-7 rounded-full text-s lg:text-2xl font-extrabold">
+              <a href="#projects" onClick={(e) => handleClick(e, "projects")}>
                 VIEW MY WORK
+              </a>
               </button>
               <div className="icons">
                 <FontAwesomeIcon icon={faLinkedin} />
@@ -28,7 +34,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="w-1/2 text-2xl font-bold ">
+          <div className="lg:w-1/2 text-2xl font-bold ">
             <p className="pb-4">
               I&apos;m a front-end developer with a strong command of{" "}
               <span className="highlight">React,</span>{" "}
