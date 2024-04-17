@@ -63,7 +63,7 @@ export default function Projects() {
                 <button
                   onMouseEnter={() => handleHover(index)}
                   onMouseLeave={handleMouseLeave}
-                  className={`imageHover absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-lg px-5 py-2 rounded-full z-10 ${
+                  className={`imageHover absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-xl px-5 py-2 rounded-full z-10 ${
                     hoveredIndex === index ? "visible" : "hidden"
                   }`}
                 >
@@ -110,10 +110,10 @@ export default function Projects() {
                 }`}
               >
                 {project.title}
-              </h2>
+              </h2> 
             </Link>
             {/* Description */}
-            <p className="text-2xl font-semi-bold">{project.description}</p>
+            <p className="text-2xl font-semibold">{project.description}</p>
           </div>
         </div>
       ))}

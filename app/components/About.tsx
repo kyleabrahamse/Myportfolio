@@ -15,13 +15,13 @@ export default function About() {
         <h2 className="highlight text-xl font-extrabold pb-3">MY FOCUS</h2>
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="lg:w-1/2 ">
-            <h1 className="text-5xl font-semi-bold pb-8">
+            <h1 className="text-5xl font-semibold pb-8">
               Harnessing the capabilities of{" "}
               <span className="highlight">Next.js</span> to improve runtime
               efficiency and elevate user interaction.
             </h1>
             <div className="flex gap-6 items-center">
-              <button className="button p-3 lg:px-7 rounded-full text-s lg:text-2xl font-extrabold">
+              <button className="button py-2 lg:px-5 rounded-full text-sm lg:text-xl font-bold">
               <a href="#projects" onClick={(e) => handleClick(e, "projects")}>
                 VIEW MY WORK
               </a>
