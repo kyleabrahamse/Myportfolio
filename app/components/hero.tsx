@@ -16,15 +16,15 @@ export default function Hero() {
             height={500}
             className="border-none rounded-full w-16"
           />
-          <h2 className="highlight text-2xl font-bold">HI, I&apos;M KYLE</h2>
+          <h2 className="highlight text-[22px] font-extrabold">HI, I&apos;M KYLE</h2>
         </div>
         <div className="md:w-10/12">
-          <h1 className="text-4xl lg:text-6xl pb-6 font-bold">
+          <h1 className="text-[76px] pb-6 font-semibold leading-none">
             I&apos;m a front-end developer with expertise in{" "}
             <span className="highlight">React</span> and{" "}
             <span className="highlight">Typscript.</span>
           </h1>
-          <p className="text-2xl pb-16 font-semibold md:pr-20">
+          <p className="text-[25px] pb-16 font-semibold md:pr-20">
             I specialise in leveraging Next.JS to optomise runtime performance
             and enhance user experiences.
           </p>
@@ -32,7 +32,7 @@ export default function Hero() {
         <ul className="grid grid-cols-2 lg:flex gap-8 font-bold pb-40">
           <li>
             <Image
-              src="/images/Javascript.png"
+              src="/images/Javascript.svg"
               alt="tech"
               width={500}
               height={500}
@@ -41,7 +41,7 @@ export default function Hero() {
           </li>
           <li>
             <Image
-              src="/images/Typescript.png"
+              src="/images/Typescript.svg"
               alt="tech"
               width={500}
               height={500}
@@ -50,7 +50,7 @@ export default function Hero() {
           </li>
           <li>
             <Image
-              src="/images/React.png"
+              src="/images/React.svg"
               alt="tech"
               width={500}
               height={500}
@@ -59,7 +59,7 @@ export default function Hero() {
           </li>
           <li>
             <Image
-              src="/images/Next.png"
+              src="/images/Next.JS.svg"
               alt="tech"
               width={500}
               height={500}

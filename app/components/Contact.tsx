@@ -60,16 +60,23 @@ export default function Contact() {
     <div className="contact text-white" id="contact">
       <div className="flex flex-col lg:flex-row w-10/12 lg:w-8/12 mx-auto py-20">
         <div className="lg:w-1/2">
-          <p className="highlight font-bold text-xl pb-5">CONTACT ME</p>
-          <h1 className="text-6xl font-bold pb-10"> Feel free to drop me a message </h1>
-          <p className="text-xl font-bold pb-4">
+          <p className="highlight font-extrabold text-[22px] pb-5">
+            CONTACT ME
+          </p>
+          <h1 className="text-[76px] leading-none font-semibold pb-10">
+            {" "}
+            Feel free to drop me a message{" "}
+          </h1>
+          <p className="text-[22px] font-semibold pb-4">
             <span className="highlight">Mobile</span> +44 7776 112 153
           </p>
-          <p className="text-xl font-bold pb-4">
+          <p className="text-[22px] font-semibold pb-4">
             <span className="highlight">Email</span> kyleabrahamse@outlook.com
           </p>
           <div className="flex pb-24">
-            <p className="mr-4 highlight text-xl font-bold my-auto">Follow my work</p>
+            <p className="mr-4 highlight text-[22px] font-semibold my-auto">
+              Follow my work
+            </p>
             <div className="flex gap-3 my-auto">
               <div className="icons">
                 <FontAwesomeIcon icon={faLinkedin} />
@@ -91,16 +98,20 @@ export default function Contact() {
               <h1 className="text-4xl leading-none tracking-tight font-semibold">
                 KyleCodes
               </h1>
-              <p className="text-sm tracking-normal font-bold">FRONT-END DEVELOPER</p>
+              <p className="text-sm tracking-normal font-bold">
+                FRONT-END DEVELOPER
+              </p>
             </div>
           </div>
         </div>
         <div className="mt-auto ">
-          <h2 className="text-3xl pb-10 font-bold">Fill out the form below</h2>
+          <h2 className="text-[40px] pb-10 font-semibold">
+            Fill out the form below
+          </h2>
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="flex flex-col lg:flex-row gap-4 lg:gap-2">
               <input
-                className="inputs text-white text-xl p-3 rounded-full"
+                className="inputs text-white text-[25px] font-semibold p-3 rounded-full"
                 type="text"
                 name="name"
                 placeholder="First Name"
@@ -108,7 +119,7 @@ export default function Contact() {
                 onChange={handleInputChange}
               />
               <input
-                className="inputs text-white text-xl p-3 rounded-full"
+                className="inputs text-white text-[25px] font-semibold p-3 rounded-full"
                 type="text"
                 name="lastName"
                 placeholder="Last Name"
@@ -117,7 +128,7 @@ export default function Contact() {
               />
             </div>
             <input
-              className="inputs text-white text-xl p-3 rounded-full"
+              className="inputs text-white text-[25px] font-semibold p-3 rounded-full"
               type="email"
               name="email"
               placeholder="Email"
@@ -126,7 +137,7 @@ export default function Contact() {
             />
             <textarea
               placeholder="Your Message"
-              className="inputs text-white text-xl p-3 rounded-full"
+              className="inputs text-white text-[25px] font-semibold p-3 rounded-full"
               name="message"
               rows={1}
               value={formData.message}

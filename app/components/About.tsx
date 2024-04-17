@@ -15,13 +15,13 @@ export default function About() {
         <h2 className="highlight text-xl font-extrabold pb-3">MY FOCUS</h2>
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="lg:w-1/2 ">
-            <h1 className="text-5xl font-semibold pb-8">
+            <h1 className="text-[40px] font-semibold pb-8">
               Harnessing the capabilities of{" "}
               <span className="highlight">Next.js</span> to improve runtime
               efficiency and elevate user interaction.
             </h1>
             <div className="flex gap-6 items-center">
-              <button className="button py-2 lg:px-5 rounded-full text-sm lg:text-xl font-bold">
+              <button className="button py-[18px] lg:px-[30px] rounded-full text-sm lg:text-[22px] font-bold">
               <a href="#projects" onClick={(e) => handleClick(e, "projects")}>
                 VIEW MY WORK
               </a>
@@ -34,7 +34,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2 text-2xl font-bold ">
+          <div className="lg:w-1/2 text-[25px] font-semibold ">
             <p className="pb-4">
               I&apos;m a front-end developer with a strong command of{" "}
               <span className="highlight">React,</span>{" "}
