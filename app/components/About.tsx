@@ -21,7 +21,7 @@ export default function About() {
               efficiency and elevate user interaction.
             </h1>
             <div className="flex gap-6 items-center">
-              <button className="button py-[18px] lg:px-[30px] rounded-full text-sm lg:text-[22px] font-bold">
+              <button className="button lg:py-[18px] py-[10px] px-[20px] lg:px-[30px]  rounded-full lg:text-[22px] font-bold">
               <a href="#projects" onClick={(e) => handleClick(e, "projects")}>
                 VIEW MY WORK
               </a>
