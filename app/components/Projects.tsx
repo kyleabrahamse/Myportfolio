@@ -47,7 +47,7 @@ export default function Projects() {
 
   return (
     <div className="bg-white pb-20" id="projects">
-      <h1 className="pt-20 pb-20 text-[76px] font-semibold w-2/3 mx-auto">My Work</h1>
+      <h1 className="pt-20 pb-20 text-5xl lg:text-[76px] font-semibold w-2/3 mx-auto">My Work</h1>
       {projects.map((project, index) => (
         // Projects container
         <div

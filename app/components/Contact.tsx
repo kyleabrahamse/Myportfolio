@@ -63,7 +63,7 @@ export default function Contact() {
           <p className="highlight font-extrabold text-[22px] pb-5">
             CONTACT ME
           </p>
-          <h1 className="text-[76px] leading-none font-semibold pb-10">
+          <h1 className="text-5xl lg:text-[76px] leading-none font-semibold pb-10">
             {" "}
             Feel free to drop me a message{" "}
           </h1>

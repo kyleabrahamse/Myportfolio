@@ -19,7 +19,7 @@ export default function Hero() {
           <h2 className="highlight text-[22px] font-extrabold">HI, I&apos;M KYLE</h2>
         </div>
         <div className="md:w-10/12">
-          <h1 className="text-[76px] pb-6 font-semibold leading-none">
+          <h1 className="text-5xl lg:text-[76px] pb-6 font-semibold leading-none">
             I&apos;m a front-end developer with expertise in{" "}
             <span className="highlight">React</span> and{" "}
             <span className="highlight">Typscript.</span>
