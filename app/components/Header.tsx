@@ -23,7 +23,7 @@ export default function Header() {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
 
-      if (currentScrollPos > 900) {
+      if (currentScrollPos > 850) {
         setHeaderBlack(true);
         setVisible(true);
       } else {

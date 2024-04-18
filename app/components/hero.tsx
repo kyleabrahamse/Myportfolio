@@ -25,7 +25,7 @@ export default function Hero() {
             <span className="highlight">Typscript.</span>
           </h1>
           <p className="text-[25px] pb-16 font-semibold md:pr-20">
-            I specialise in leveraging Next.JS to optomise runtime performance
+            I specialise in leveraging <span className="highlight">Next.JS</span> to optomise runtime performance
             and enhance user experiences.
           </p>
         </div>

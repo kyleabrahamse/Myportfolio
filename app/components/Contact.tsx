@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
@@ -79,10 +80,17 @@ export default function Contact() {
             </p>
             <div className="flex gap-3 my-auto">
               <div className="icons">
-                <FontAwesomeIcon icon={faLinkedin} />
+                <Link
+                  href="https://www.linkedin.com/in/kyle-abrahamse/"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
               </div>
               <div className="icons">
-                <FontAwesomeIcon icon={faSquareGithub} />
+                <Link href="https://github.com/kyleabrahamse" target="_blank">
+                  <FontAwesomeIcon icon={faSquareGithub} />
+                </Link>
               </div>
             </div>
           </div>

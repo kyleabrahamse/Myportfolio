@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  color: #0A233C
+}
+
 :root {
   --highlight: #439288;
 }

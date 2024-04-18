@@ -22,7 +22,7 @@ export default function Projects() {
       title: "Pilanesberg Leopard Project",
       description:
         "A webiste to help track and identify leopards fostering consevation efforts within the Pilanesberg Game Reserve in South Africa.",
-      technologies: ["REACT", "SCSS"],
+      technologies: ["REACT", "NEXT.JS", "TYPESCRIPT", "FIREBASE"],
       link: "https://pilanesberg-leopard-project.netlify.app/",
     },
     {
