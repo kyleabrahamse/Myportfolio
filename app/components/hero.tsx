@@ -7,7 +7,7 @@ export default function Hero() {
       className="hero bg-transparent justify-center flex flex-col text-white "
       id="home"
     >
-      <div className="w-10/12 md:w-8/12 mx-auto pt-52">
+      <div className="w-10/12 md:w-9/12 mx-auto pt-52">
         <div className="flex items-center gap-3 pb-6">
           <Image
             src="/images/ppimage2.jpeg"

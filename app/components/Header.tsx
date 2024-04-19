@@ -47,7 +47,7 @@ export default function Header() {
         visible ? "" : "-translate-y-full"
       }`}
     >
-      <div className="flex content-center w-10/12 md:w-8/12 mx-auto justify-between ">
+      <div className="flex content-center w-10/12 md:w-9/12 mx-auto justify-between ">
         <div className="">
           <a href="#home" onClick={(e) => handleClick(e, "home")}>
             <h1 className="text-4xl leading-none tracking-tight font-semibold">

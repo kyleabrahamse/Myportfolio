@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className="bg-white" id="about">
-      <div className="lg:w-8/12 w-10/12 mx-auto pt-40">
+      <div className="lg:w-9/12 w-10/12 mx-auto pt-40">
         <h2 className="highlight text-xl font-extrabold pb-3">MY FOCUS</h2>
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="lg:w-1/2 ">

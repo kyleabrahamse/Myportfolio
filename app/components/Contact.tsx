@@ -59,8 +59,8 @@ export default function Contact() {
 
   return (
     <div className="contact text-white" id="contact">
-      <div className="flex flex-col lg:flex-row w-10/12 lg:w-8/12 mx-auto py-20">
-        <div className="lg:w-1/2">
+      <div className="flex flex-col lg:flex-row w-10/12 lg:w-9/12 mx-auto py-20">
+        <div className="w-1/2">
           <p className="highlight font-extrabold text-[22px] pb-5">
             CONTACT ME
           </p>
@@ -112,14 +112,14 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="mt-auto ">
+        <div className="mt-auto w-1/2">
           <h2 className="text-[40px] pb-10 font-semibold">
             Fill out the form below
           </h2>
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <div className="flex flex-col lg:flex-row gap-4 lg:gap-2">
+            <div className="flex flex-col lg:flex-row gap-4 lg:gap-2 ">
               <input
-                className="inputs text-white text-[25px] font-semibold p-3 rounded-full"
+                className="inputs text-white text-[25px] font-semibold p-3 rounded-full w-1/2"
                 type="text"
                 name="name"
                 placeholder="First Name"
@@ -127,7 +127,7 @@ export default function Contact() {
                 onChange={handleInputChange}
               />
               <input
-                className="inputs text-white text-[25px] font-semibold p-3 rounded-full"
+                className="inputs text-white text-[25px] font-semibold p-3 rounded-full w-1/2"
                 type="text"
                 name="lastName"
                 placeholder="Last Name"

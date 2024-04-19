@@ -47,7 +47,9 @@ export default function Projects() {
 
   return (
     <div className="bg-white pb-20" id="projects">
-      <h1 className="pt-20 pb-20 text-5xl lg:text-[76px] font-semibold w-2/3 mx-auto">My Work</h1>
+      <h1 className="pt-20 pb-20 text-5xl lg:text-[76px] font-semibold w-9/12 mx-auto">
+        My Work
+      </h1>
       {projects.map((project, index) => (
         // Projects container
         <div
@@ -86,7 +88,9 @@ export default function Projects() {
           </div>
           {/* Project Info */}
           <div
-            className={`lg:w-4/12 w-10/12 my-auto ml-10 ${index % 2 !== 0 ? "mr-5" : ""}`}
+            className={`lg:w-[36.2%] w-10/12 my-auto ml-10 ${
+              index % 2 !== 0 ? "mr-5" : ""
+            }`}
           >
             <div className="flex gap-3 pt-10 lg:pb-0">
               {/* List tech */}
@@ -111,7 +115,7 @@ export default function Projects() {
                 }`}
               >
                 {project.title}
-              </h2> 
+              </h2>
             </Link>
             {/* Description */}
             <p className="text-[25px] font-semibold">{project.description}</p>
