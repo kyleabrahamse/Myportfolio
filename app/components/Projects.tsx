@@ -92,7 +92,7 @@ export default function Projects() {
               index % 2 !== 0 ? "mr-5" : ""
             }`}
           >
-            <div className="flex gap-3 pt-10 lg:pb-0">
+            <div className="flex flex-wrap gap-3 pt-10 lg:pb-0">
               {/* List tech */}
               {project.technologies.map((tech, index) => (
                 <h3
