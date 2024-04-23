@@ -16,17 +16,20 @@ export default function Hero() {
             height={500}
             className="border-none rounded-full w-16"
           />
-          <h2 className="highlight text-[22px] font-extrabold">HI, I&apos;M KYLE</h2>
+          <h2 className="highlight text-[22px] font-extrabold">
+            HI, I&apos;M KYLE
+          </h2>
         </div>
         <div className="md:w-10/12">
           <h1 className="text-5xl lg:text-[76px] pb-6 font-semibold leading-none">
             I&apos;m a front-end developer with expertise in{" "}
             <span className="highlight">React</span> and{" "}
-            <span className="highlight">Typscript.</span>
+            <span className="highlight">Typescript.</span>
           </h1>
           <p className="text-[25px] pb-16 font-semibold md:pr-20">
-            I specialise in leveraging <span className="highlight">Next.JS</span> to optomise runtime performance
-            and enhance user experiences.
+            I specialise in leveraging{" "}
+            <span className="highlight">Next.JS</span> to optomise runtime
+            performance and enhance user experiences.
           </p>
         </div>
         <ul className="grid grid-cols-2 lg:flex gap-8 font-bold pb-40">
