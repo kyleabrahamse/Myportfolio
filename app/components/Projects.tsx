@@ -78,7 +78,7 @@ export default function Projects() {
                   width={2000}
                   height={2000}
                   className={`w-full h-96 rounded-lg ${
-                    index === 1 ? "" : "object-cover"
+                    "object-cover"
                   } ${hoveredIndex === index ? "opacity-50" : "opacity-1"}`}
                   onMouseEnter={() => handleHover(index)}
                   onMouseLeave={handleMouseLeave}
