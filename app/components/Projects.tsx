@@ -26,6 +26,15 @@ export default function Projects() {
       link: "https://pilanesberg-leopard-project.netlify.app/",
     },
     {
+      src: "/images/recipe.png",
+      alt: "Recipe Planner",
+      title: "Veggie Vibez",
+      description:
+        "A vegan recipe planner that generates random recipes and a shopping list for the week, sorted by aisle.",
+      technologies: ["REACT", "NEXT.JS", "TYPESCRIPT"],
+      link: "https://veggievibez.netlify.app/",
+    },
+    {
       src: "/images/holiday.png",
       alt: "A Holiday Keeper",
       title: "A Holiday Keeper",
@@ -33,15 +42,6 @@ export default function Projects() {
         "An app to keep track of holiday destinations a user wants to visit.",
       technologies: ["JAVASCRIPT", "FIREBASE"],
       link: "https://our-holiday-planner.netlify.app/",
-    },
-    {
-      src: "/images/recipe.png",
-      alt: "Recipe Planner",
-      title: "Recipe Planner",
-      description:
-        "A recipe planner that generates recipes and a shopping list for the week.",
-      technologies: ["JAVASCRIPT", "HTML", "CSS"],
-      link: "https://our-recipe-planner.netlify.app/",
     },
   ];
 
@@ -77,9 +77,8 @@ export default function Projects() {
                   alt={project.alt}
                   width={2000}
                   height={2000}
-                  className={`w-full h-96 rounded-lg ${
-                    "object-cover"
-                  } ${hoveredIndex === index ? "opacity-50" : "opacity-1"}`}
+                  className={`w-full h-96 rounded-lg object-cover
+                   ${hoveredIndex === index ? "opacity-50" : "opacity-1"}`}
                   onMouseEnter={() => handleHover(index)}
                   onMouseLeave={handleMouseLeave}
                 />
