@@ -23,7 +23,7 @@ export default function Projects() {
       description:
         "A webiste to help track and identify leopards fostering consevation efforts within the Pilanesberg Game Reserve in South Africa.",
       technologies: ["REACT", "NEXT.JS", "TYPESCRIPT", "FIREBASE"],
-      link: "https://pilanesberg-leopard-project.netlify.app/",
+      link: "https://pilanesberg-leopard-project.vercel.app/",
     },
     {
       src: "/images/recipe.png",
