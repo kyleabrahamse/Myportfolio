@@ -43,7 +43,7 @@ export default function About() {
             </p>
             <p className="pb-4">
               Recently, I have embarked on a journey into the realm of testing
-              with Jest, a popular testing framework for JavaScript
+              with Vitest, a popular testing framework for JavaScript
               applications. I aim to ensure the resilience and reliability of
               the codebases I work on, delivering robust solutions that meet the
               highest standards of quality.
