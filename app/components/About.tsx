@@ -36,7 +36,7 @@ export default function About() {
           </div>
           <div className="lg:w-1/2 text-[25px] font-semibold ">
             <p className="pb-4">
-              I'm a front-end developer with full-stack proficiency, specialising in modern web development with <span className="highlight">React/Next.js</span> and extensible <span className="highlight">Wordpress</span> solutions. Skilled in <span className="highlight">Javascript</span>, <span className="highlight">Typescript</span> and <span className="highlight">PHP</span>, with applied experience building backend services and APIs using <span className="highlight">Laravel</span>.
+              I&apos;m a front-end developer with full-stack proficiency, specialising in modern web development with <span className="highlight">React/Next.js</span> and extensible <span className="highlight">Wordpress</span> solutions. Skilled in <span className="highlight">Javascript</span>, <span className="highlight">Typescript</span> and <span className="highlight">PHP</span>, with applied experience building backend services and APIs using <span className="highlight">Laravel</span>.
             </p>
             <p>
               To see examples of my work please visit my{" "}
