@@ -36,17 +36,7 @@ export default function About() {
           </div>
           <div className="lg:w-1/2 text-[25px] font-semibold ">
             <p className="pb-4">
-              I&apos;m a front-end developer with a strong command of{" "}
-              <span className="highlight">React,</span>{" "}
-              <span className="highlight">TypeScript </span>
-              and <span className="highlight">NextJS.</span>
-            </p>
-            <p className="pb-4">
-              Recently, I have embarked on a journey into the realm of testing
-              with Vitest, a popular testing framework for JavaScript
-              applications. I aim to ensure the resilience and reliability of
-              the codebases I work on, delivering robust solutions that meet the
-              highest standards of quality.
+              I'm a front-end developer with full-stack proficiency, specialising in modern web development with <span className="highlight">React/Next.js</span> and extensible <span className="highlight">Wordpress</span> solutions. Skilled in <span className="highlight">Javascript</span>, <span className="highlight">Typescript</span> and <span className="highlight">PHP</span>, with applied experience building backend services and APIs using <span className="highlight">Laravel</span>.
             </p>
             <p>
               To see examples of my work please visit my{" "}

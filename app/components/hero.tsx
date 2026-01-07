@@ -24,7 +24,7 @@ export default function Hero() {
           <h1 className="text-5xl lg:text-[76px] pb-6 font-semibold leading-none">
             I&apos;m a front-end developer with expertise in{" "}
             <span className="highlight">React</span> and{" "}
-            <span className="highlight">Typescript.</span>
+            <span className="highlight">Wordpress.</span>
           </h1>
           <p className="text-[25px] pb-16 font-semibold md:pr-20">
             I specialise in leveraging{" "}

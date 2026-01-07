@@ -64,18 +64,30 @@ export default function Header() {
         </div>
         <nav className="flex">
           <ul className="flex gap-14 text-xl font-bold items-center">
-            <li className="hover hidden lg:block">
-              <a href="#about" onClick={(e) => handleClick(e, "about")}>
+            <li className="hidden lg:block">
+              <a
+                href="#about"
+                onClick={(e) => handleClick(e, "about")}
+                className="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-[#439288] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:ease-out"
+              >
                 ABOUT
               </a>
             </li>
-            <li className="hover hidden lg:block">
-              <a href="#projects" onClick={(e) => handleClick(e, "projects")}>
+            <li className="hidden lg:block">
+              <a
+                href="#projects"
+                onClick={(e) => handleClick(e, "projects")}
+                className="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-[#439288] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:ease-out"
+              >
                 PROJECTS
               </a>
             </li>
-            <li className="hover hidden lg:block">
-              <a href="#contact" onClick={(e) => handleClick(e, "contact")}>
+            <li className="hidden lg:block">
+              <a
+                href="#contact"
+                onClick={(e) => handleClick(e, "contact")}
+                className="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-[#439288] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:ease-out"
+              >
                 GET IN TOUCH
               </a>
             </li>

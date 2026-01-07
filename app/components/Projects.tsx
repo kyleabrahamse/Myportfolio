@@ -26,23 +26,22 @@ export default function Projects() {
       link: "https://pilanesberg-leopard-project.vercel.app/",
     },
     {
-      src: "/images/recipe.png",
-      alt: "Recipe Planner",
-      title: "Veggie Vibez",
+      src: "/images/marlin.png",
+      alt: "Marlin Windows",
+      title: "Marlin Windows",
       description:
-        "A vegan recipe planner that generates random recipes and a shopping list for the week, sorted by aisle.",
-      technologies: ["REACT", "NEXT.JS", "TYPESCRIPT"],
-      link: "https://veggievibez.netlify.app/",
+        "A bespoke WordPress website for a premium UK manufacturer of aluminium heritage and contemporary glazing. Built from the ground up using a custom block-based theme on the Sage Roots starter theme.",
+      technologies: ["WORDPRESS", "PHP", "JAVASCRIPT", "TAILWIND CSS"],
+      link: "https://marlinwindows.co.uk/",
     },
     {
-      src: "/images/holiday.png",
-      alt: "A Holiday Keeper",
-      title: "A Holiday Keeper",
-      description:
-        "An app to keep track of holiday destinations a user wants to visit.",
-      technologies: ["JAVASCRIPT", "FIREBASE"],
-      link: "https://our-holiday-planner.netlify.app/",
-    },
+      src: "/images/crashlaw.png",
+      alt: "Crashlaw24",
+      title: "Crashlaw24",
+      description: "A React and Laravel platform for a legal firm specialising in motoring offences. Built with a React frontend using MUI for styling, a Laravel backend and Payload CMS for content management.",
+      technologies: ["REACT", "LARAVEL", "MUI", "PAYLOAD CMS"],
+      link: "https://crashlaw24.co.uk/",
+    }
   ];
 
   return (
@@ -77,8 +76,8 @@ export default function Projects() {
                   alt={project.alt}
                   width={2000}
                   height={2000}
-                  className={`w-full h-96 rounded-lg object-cover
-                   ${hoveredIndex === index ? "opacity-50" : "opacity-1"}`}
+                  className={`w-full h-96 rounded-lg object-cover transition-opacity duration-400 ease-out
+                   ${hoveredIndex === index ? "opacity-50" : "opacity-100"}`}
                   onMouseEnter={() => handleHover(index)}
                   onMouseLeave={handleMouseLeave}
                 />
@@ -107,11 +106,10 @@ export default function Projects() {
               <h2
                 onMouseEnter={() => handleHover(index)}
                 onMouseLeave={handleMouseLeave}
-                className={`h1 text-4xl pt-4 font-semibold pb-4 tracking-wide ${
-                  hoveredIndex === index
-                    ? "highlight underline underline-offset-4"
-                    : ""
-                }`}
+                className={`h1 text-4xl pt-4 font-semibold pb-4 tracking-wide relative inline-block
+                  after:content-[''] after:absolute after:left-0 after:bottom-3 after:h-[3px] after:bg-current
+                  after:transition-all after:duration-400 after:ease-out
+                  ${hoveredIndex === index ? "highlight after:w-full" : "after:w-0"}`}
               >
                 {project.title}
               </h2>
